@@ -9,9 +9,7 @@ pipeline {
     stages {
         stage('Init') {
             steps {
-                git 'https://github.com/gokulraja2787/trader-common.git'
-                checkout scm
-                sh "git checkout main"
+                git([url: 'https://github.com/gokulraja2787/trader-common.git', branch: 'master'])
             }
 
         }
