@@ -10,6 +10,7 @@ pipeline {
         stage('Init') {
             steps {
                 git 'https://github.com/gokulraja2787/trader-common.git'
+                checkout scm
             }
 
         }
