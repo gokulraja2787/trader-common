@@ -9,7 +9,7 @@ pipeline {
     stages {
         stage('Init') {
             steps {
-                git([url: 'https://github.com/gokulraja2787/trader-common.git', branch: 'master'])
+                git([url: 'https://github.com/gokulraja2787/trader-common.git', branch: 'main'])
             }
 
         }
